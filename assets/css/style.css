@@ -1,0 +1,203 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../images/dust_scratches/dust_scratches.png");
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+/* ----------------
+Navbar
+ -----------------*/
+nav {
+    width: 100%;
+    position: static;
+    background-color: #ffffff;
+}
+ .navbar {
+    margin: auto;
+    border-color: #cccccc;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: auto;
+    margin-bottom: 0;
+
+}
+.navbar-header, .navbar-right, .navbar-nav {
+    display:inline-block;
+}
+.navbar-header {
+    background-color: #4aaaa5;
+    color : #ffffff;
+    padding: 0px 20px;
+    float: left;
+}
+
+.navbar-right {
+    float: right;
+    
+}
+
+.navbar-nav {
+    padding: 0px 20px;
+}
+
+.navbar-nav a {
+    text-decoration: none;
+}
+.navbar-nav a:hover {
+    text-decoration: underline;
+}
+.navbar-line {
+    border-right: 2px solid #cccccc;
+    
+}
+
+
+/* ----------------
+Images
+ -----------------*/
+
+#profile {
+    float:left; 
+    width: 15em;
+    height: 15em;
+    margin: auto 1em 1em auto;
+}
+
+.pic img {
+    height: 150px;
+    width: 150px;
+}
+
+/* ----------------
+h1,h2,h3...
+ -----------------*/
+
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    
+    padding-bottom: 20px;
+    border-bottom: 2px solid #dddddd;
+    color: #4aaaa5;
+}
+
+h4 {
+    display: block;
+    font-size: 1em;
+    margin-top: 1.33em;
+    margin-bottom: 1.33em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+
+    color: #777777;
+}
+
+p {
+    line-height: 2em;
+    color: #777777;
+    
+}
+
+p, 
+h4, 
+footer {
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+/* ----------------
+Main Body
+ -----------------*/
+
+.container {
+    background-color: #ffffff;
+    border: #dddddd;
+    margin: 1em auto 10em auto;
+    width: 70%;
+    height: auto;
+    flex: 1 0 auto;
+    padding: 1em;
+}
+
+
+/* ----------------
+Footer
+ -----------------*/
+footer {
+    
+    background-color: #666666;
+    text-align: center;
+    border-top: 5px solid #4aaaa5;
+    padding: 30px 0 10px 0;
+    
+    flex-shrink: 0;
+    color: #ffffff;
+}
+
+td {
+    padding: 10px;
+}
+
+
+@media screen and (max-width: 980px) {
+    body {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 768px) {
+    body {
+        width: 100%;
+    }
+    .container {
+        width: auto;
+    }
+}
+@media screen and (max-width: 640px) {
+    .navbar-header {
+        float:none;
+        width: 100%;
+        text-align: center;
+    }
+    .navbar-right {
+        display: block;
+        width: 100%;
+        text-align: center;
+        
+    }
+
+    .container {
+        width: 80%;
+    }
+    #profile {
+        float: none;   
+    }
+    table {
+        width: 100%;
+    }
+    tr, td {
+        display: block;
+        width: 100%;
+    }
+    tr {
+        width: 100%;
+    }
+    td {
+        margin: auto;
+    }
+}
